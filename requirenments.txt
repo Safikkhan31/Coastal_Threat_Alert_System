@@ -1,3 +1,4 @@
 mysql-connector-python
 scikit-learn
 joblib
+pandas

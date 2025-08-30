@@ -28,12 +28,15 @@ public class Main {
 
     public static void routine(){
         System.out.println(".......................................routine started.........................................");
-        Dotenv dotenv = Dotenv.configure().ignoreIfMissing().load();
+        // Dotenv dotenv = Dotenv.configure().ignoreIfMissing().load();
 
-        String url = dotenv.get("url", System.getenv("url"));
-        String user = dotenv.get("user", System.getenv("user"));
-        String password = dotenv.get("password", System.getenv("password"));
-        
+        // String url = dotenv.get("url", System.getenv("url"));
+        // String user = dotenv.get("user", System.getenv("user"));
+        // String password = dotenv.get("password", System.getenv("password"));
+
+        String url = System.getenv("url");
+        String user = System.getenv("user");
+        String password = System.getenv("password");
 
         try{
             DriverManager.registerDriver(new Driver());
