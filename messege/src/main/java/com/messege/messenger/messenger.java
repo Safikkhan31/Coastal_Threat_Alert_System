@@ -13,11 +13,12 @@ import io.github.cdimascio.dotenv.Dotenv;
 
 public class messenger {
 
-    Dotenv dotenv = Dotenv.load();
-    String ACCOUNT_SID = dotenv.get("ACCOUNT_SID");
-    String AUTH_TOKEN = dotenv.get("AUTH_TOKEN");
-    String twilio_number = dotenv.get("NUMBER");
-    String twilio_number_sms = dotenv.get("NUMBER_SMS");
+    Dotenv dotenv = Dotenv.configure().ignoreIfMissing().load();
+
+    String ACCOUNT_SID = dotenv.get("ACCOUNT_SID", System.getenv("ACCOUNT_SID"));
+    String AUTH_TOKEN = dotenv.get("AUTH_TOKEN", System.getenv("AUTH_TOKEN"));
+    String twilio_number = dotenv.get("NUMBER", System.getenv("NUMBER"));
+    String twilio_number_sms = dotenv.get("NUMBER_SMS", System.getenv("NUMBER_SMS"));
 
     public void send(String phone_no, String messege){
 
