@@ -7,5 +7,5 @@ python sensor_data_generator/sensor.py
 python AI_models/DatabaseManagment.py
 
 # Start Java alert service in foreground
-java -jar messege/target/messege-1.0-SNAPSHOT.jar
+java -jar app.jar
 
