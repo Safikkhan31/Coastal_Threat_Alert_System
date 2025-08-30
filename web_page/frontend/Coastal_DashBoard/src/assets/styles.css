@@ -1,0 +1,166 @@
+@import "tailwindcss";
+:root{
+  --accent:#1a4a6a;
+  --muted:#7a7a7a;
+  --bg: #f0f6fb;
+}
+
+*{box-sizing:border-box}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(120deg, #cfeffd 0%, #ffffff 60%);
+  min-height: 100vh;
+  color: #203244;
+}
+
+.dashboard-container {
+  width: calc(100% - 80px);
+  max-width: 1400px; /* larger window */
+  margin: 30px auto;
+  background: #fff;
+  padding: 28px 36px;
+  border-radius: 18px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+}
+
+header, footer {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+header h1 {
+  margin: 0;
+  color: var(--accent);
+  font-size: 2.2rem;
+}
+
+header p {
+  margin: 6px 0 0;
+  color: #3b6e8f;
+}
+
+footer {
+  margin-top: 32px;
+  color: #7a7a7a;
+}
+
+main {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.grid-full {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+@media (max-width: 1100px) {
+  .grid-full { grid-template-columns: 1fr; }
+}
+
+section {
+  padding: 20px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #fbfeff 0%, #f7fafc 100%);
+  border-left: 8px solid var(--accent);
+  position: relative;
+  min-height: 200px;
+  transition: transform .14s ease, box-shadow .14s ease;
+}
+
+section:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(26,74,106,0.08); }
+
+.icon { position:absolute; top:18px; right:18px; font-size:2.4rem; opacity:0.14; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px 0;
+}
+
+ul li {
+  margin: 6px 0;
+  font-size: 1rem;
+  color: #22364a;
+}
+
+ul li b {
+  color: #0d7bbd;
+}
+
+.stat-row {
+  display:flex; align-items:center; gap:12px; margin-top:10px;
+}
+.stat-label { flex: 1 1 160px; color:#365a72; font-weight:600; }
+.stat-value { width: 64px; text-align:right; color:#0d7bbd; font-weight:700; }
+
+/* bars */
+.bar-bg {
+  flex:1;
+  height:14px;
+  background:rgba(13,123,189,0.09);
+  border-radius:8px;
+  overflow:hidden;
+  box-shadow: inset 0 -2px 6px rgba(0,0,0,0.03);
+}
+.bar-fill {
+  height:100%;
+  background: linear-gradient(90deg,#00a3ff,#0077cc);
+  width:0;
+  transition: width .7s ease;
+}
+.bar-fill.purple { background: linear-gradient(90deg,#9b59b6,#6d29a5); }
+
+/* cyclone badge */
+.category-badge {
+  display:inline-block;
+  margin-top:12px;
+  padding:8px 12px;
+  border-radius:999px;
+  background:rgba(26,74,106,0.06);
+  color:var(--accent);
+  font-weight:700;
+}
+.cat-0 { background: rgba(0,0,0,0.03) }
+.cat-1 { background: rgba(34,139,230,0.08) }
+.cat-2 { background: rgba(255,200,50,0.08); color:#b36a00}
+.cat-3 { background: rgba(255,140,60,0.10); color:#cf4b00}
+.cat-4 { background: rgba(255,80,80,0.12); color:#b30000}
+.cat-5 { background: rgba(200,20,20,0.14); color:#7a0000 }
+
+/* flood risk meter */
+.risk-meter { margin-top:12px; padding:10px; border-radius:8px; display:inline-block; font-weight:700; }
+.risk-low { background: rgba(16,185,129,0.08); color:#0f9d76 }
+.risk-med { background: rgba(250,204,21,0.10); color:#b37f00 }
+.risk-high { background: rgba(255,70,58,0.10); color:#c02b1b }
+
+/* meta */
+.meta { text-align:right; color:var(--muted); margin-top:6px; font-size:0.9rem; }
+
+/* Fallback for common Tailwind-like utility classes used by components */
+.bg-white { background: #fff !important; }
+.rounded-lg { border-radius: 0.75rem !important; }
+.p-6 { padding: 1.5rem !important; }
+.shadow-lg { box-shadow: 0 10px 30px rgba(0,0,0,0.08) !important; }
+.text-gray-700 { color: #374151 !important; }
+.text-gray-900 { color: #111827 !important; }
+.text-gray-600 { color: #4b5563 !important; }
+.text-lg { font-size: 1.125rem !important; }
+.text-3xl { font-size: 1.875rem !important; }
+.font-medium { font-weight: 500 !important; }
+.font-bold { font-weight: 700 !important; }
+.px-3 { padding-left: .75rem !important; padding-right: .75rem !important; }
+.py-1 { padding-top: .25rem !important; padding-bottom: .25rem !important; }
+.rounded-full { border-radius: 9999px !important; }
+.text-sm { font-size: .875rem !important; }
+.mb-4 { margin-bottom: 1rem !important; }
+.flex { display: flex !important; }
+.items-center { align-items: center !important; }
+.justify-between { justify-content: space-between !important; }
+.mr-3 { margin-right: .75rem !important; }
+.mr-1 { margin-right: .25rem !important; }
+.p-6 { padding: 1.5rem !important; }
