@@ -1,5 +1,8 @@
 import mysql.connector
 from Models import chlorophyll_prediction, CyclonePrediction, dumpingModel, sealevel_rise_model
+import os
+
+models_path = os.path.join(os.path.dirname(__file__), "Models")
 
 config = {
     'user': 'sql12796661',
@@ -18,11 +21,11 @@ try:
 
     # Load models once outside the loop for efficiency
     modelc = chlorophyll_prediction.AlgalBloomPredictor()
-    modelc.load_model(r'C:\Users\conne\OneDrive\Desktop\Hackout\Coastal_Threat_Alert_System\AI_models\Models\algal_bloom_model.pkl')
-    modelslr = sealevel_rise_model.load_model(r'C:\Users\conne\OneDrive\Desktop\Hackout\Coastal_Threat_Alert_System\AI_models\Models\sea_level_rise_model.pkl')
-    dumping_model = dumpingModel.load_model(r'C:\Users\conne\OneDrive\Desktop\Hackout\Coastal_Threat_Alert_System\AI_models\Models\dumping_model.pkl')
+    modelc.load_model(os.path.join(models_path, 'algal_bloom_model.pkl'))
+    modelslr = sealevel_rise_model.load_model(os.path.join(models_path, 'sea_level_rise_model.pkl'))
+    dumping_model = dumpingModel.load_model(os.path.join(models_path, 'dumping_model.pkl'))
     cyclone_model1 = CyclonePrediction.CycloneCategoryPredictor()
-    cyclone_model1.load_model(r'C:\Users\conne\OneDrive\Desktop\Hackout\Coastal_Threat_Alert_System\AI_models\Models\Modelscyclone_category_model.pkl')
+    cyclone_model1.load_model(os.path.join(models_path, 'Modelscyclone_category_model.pkl'))
 
     for row in rows:
         row = list(row)  # Convert tuple to list if you want to modify it

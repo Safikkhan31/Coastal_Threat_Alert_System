@@ -7,7 +7,7 @@ import joblib
 from datetime import datetime, timedelta
 def train_model():
     """Train Random Forest model to predict sea level rise"""
-    df = pd.read_csv(r'C:\Users\conne\OneDrive\Desktop\Hackout\Coastal_Threat_Alert_System\AI_models\datafetch\tide_data.csv')
+    df = pd.read_csv(r'../datafetch/tide_data.csv')
     
     # Features and target
     X = df[['water_level_cm', 'rainfall_mm_hr']]
@@ -49,7 +49,7 @@ def predict_sea_level_rise(model, water_level_cm, rainfall_mm_hr):
     return round(prediction, 1)
 
 # Save model function
-def save_model(model, filename=r'C:\Users\conne\OneDrive\Desktop\Hackout\Coastal_Threat_Alert_System\AI_models\Models/sea_level_rise_model.pkl'):
+def save_model(model, filename=r'./sea_level_rise_model.pkl'):
     """
     Save the trained model to disk
     
@@ -79,6 +79,6 @@ def load_model(filename):
 if __name__ == "__main__":
     
     
-    loaded_model = load_model(r'C:\Users\conne\OneDrive\Desktop\Hackout\Coastal_Threat_Alert_System\AI_models\Models\sea_level_rise_model.pkl')
+    loaded_model = load_model(r'./sea_level_rise_model.pkl')
     test_prediction = predict_sea_level_rise(loaded_model, 65.2, 18.5)
     print(f"Test with loaded model: Water Level: 65.2cm, Rainfall: 18.5mm/hr -> {test_prediction}cm")

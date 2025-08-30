@@ -64,7 +64,7 @@ class AlgalBloomPredictor:
         
         return prediction
     
-    def save_model(self, filepath=r'C:\Users\conne\OneDrive\Desktop\Hackout\Coastal_Threat_Alert_System\AI_models\Models/algal_bloom_model.pkl'):
+    def save_model(self, filepath=r'./algal_bloom_model.pkl'):
         """Save the trained model"""
         if self.model is None:
             raise ValueError("No model to save. Please train the model first.")
@@ -90,7 +90,7 @@ class AlgalBloomPredictor:
 if __name__ == "__main__":
     # Example of loading saved model
     new_predictor = AlgalBloomPredictor()
-    new_predictor.load_model(r'C:\Users\conne\OneDrive\Desktop\Hackout\Coastal_Threat_Alert_System\AI_models\Models\algal_bloom_model.pkl')
+    new_predictor.load_model(r'./algal_bloom_model.pkl')
     
     # Make prediction with loaded model
     risk_score = new_predictor.predict(20.0, 4.0, 28.0, 22.0)

@@ -75,7 +75,7 @@ class CycloneCategoryPredictor:
         
         return int(prediction)
     
-    def save_model(self, filepath=r'C:\Users\conne\OneDrive\Desktop\Hackout\Coastal_Threat_Alert_System\AI_models\Models/Modelscyclone_category_model.pkl'):
+    def save_model(self, filepath=r'./Modelscyclone_category_model.pkl'):
         """Save the trained model"""
         if self.model is None:
             raise ValueError("No model to save. Please train the model first.")
@@ -103,7 +103,7 @@ if __name__ == "__main__":
     
     # Example of loading saved model
     new_predictor = CycloneCategoryPredictor()
-    new_predictor.load_model(r'C:\Users\conne\OneDrive\Desktop\Hackout\Coastal_Threat_Alert_System\AI_models\Models\Modelscyclone_category_model.pkl')
+    new_predictor.load_model(r'./Modelscyclone_category_model.pkl')
     
     # Make prediction with loaded model
     result = new_predictor.predict(45, 980, 28.5, 6.5)

@@ -10,7 +10,7 @@ import joblib
 # ==============================
 def train_model():
     """Train Random Forest model to predict illegal dumping quantity"""
-    df = pd.read_csv(r'C:\Users\conne\OneDrive\Desktop\Hackout\Coastal_Threat_Alert_System\AI_models\datafetch\illegal_dumping_dataset.csv')
+    df = pd.read_csv(r'../datafetch/illegal_dumping_dataset.csv')
     
     # Features and target
     X = df[['tss_mg_l', 'turbidity_ntu', 'do_mg_l']]
@@ -61,7 +61,7 @@ def predict_dumping_quantity(model, tss_mg_l, turbidity_ntu, do_mg_l):
 # ==============================
 # Save / Load Model
 # ==============================
-def save_model(model, filename=r'C:\Users\conne\OneDrive\Desktop\Hackout\Coastal_Threat_Alert_System\AI_models\Models/dumping_model.pkl'):
+def save_model(model, filename=r'./dumping_model.pkl'):
     joblib.dump(model, filename)
     print(f"Model saved as {filename}")
 
@@ -77,6 +77,6 @@ if __name__ == "__main__":
    
     
     # Load model and test prediction
-    loaded_model = load_model(r'C:\Users\conne\OneDrive\Desktop\Hackout\Coastal_Threat_Alert_System\AI_models\Models\dumping_model.pkl')
+    loaded_model = load_model(r'C./dumping_model.pkl')
     test_prediction = predict_dumping_quantity(loaded_model, tss_mg_l=250, turbidity_ntu=150, do_mg_l=5.5)
     print(f"Predicted Dumping Quantity: {test_prediction} kg")
