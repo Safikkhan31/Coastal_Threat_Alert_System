@@ -1,5 +1,6 @@
-package com.farmcast;
-import com.farmcast.messenger.messenger;
+package com.messege_manager;
+
+import com.messege_manager.messenger.messenger;
 import org.junit.Test;
 
 public class AppTest{

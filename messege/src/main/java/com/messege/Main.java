@@ -1,4 +1,4 @@
-package com.farmcast;
+package com.messege;
 
 import java.time.LocalTime;
 import java.time.Duration;
@@ -6,7 +6,7 @@ import io.github.cdimascio.dotenv.Dotenv;
 import java.sql.*;
 import com.mysql.cj.jdbc.Driver;
 import com.google.gson.*;
-import com.farmcast.messenger.messenger;
+import com.messege.messenger.messenger;
 
 public class Main {
     public static void main(String[] args) {
