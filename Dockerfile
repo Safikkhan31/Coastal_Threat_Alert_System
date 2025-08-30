@@ -16,7 +16,7 @@ COPY messege/target/messege-1.0-SNAPSHOT.jar .
 COPY messege/.env .
 
 # Copy Python requirements and install
-COPY requirements.txt .
+COPY requirenments.txt .
 RUN pip3 install --no-cache-dir -r requirements.txt
 
 # Copy the run script and give execute permission
