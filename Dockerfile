@@ -13,7 +13,7 @@ WORKDIR /app
 COPY sensor_data_generator/ sensor_data_generator/
 COPY AI_models/ AI_models/
 COPY messege/target/messege-1.0-SNAPSHOT.jar .
-COPY messege/.env .
+COPY messege/".env" .
 
 # Copy Python requirements and install
 COPY requirenments.txt .
