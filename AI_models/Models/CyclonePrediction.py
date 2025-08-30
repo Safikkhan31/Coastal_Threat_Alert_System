@@ -73,11 +73,7 @@ class CycloneCategoryPredictor:
             5: "Category 5 Catastrophic Hurricane"
         }
         
-        return {
-            'category': int(prediction),
-            'description': category_descriptions[prediction],
-            'confidence': confidence
-        }
+        return int(prediction)
     
     def save_model(self, filepath=r'C:\Users\conne\OneDrive\Desktop\Hackout\Coastal_Threat_Alert_System\AI_models\Models/Modelscyclone_category_model.pkl'):
         """Save the trained model"""
