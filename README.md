@@ -69,6 +69,11 @@
 
 Note: Parameters like **dumping_quantity, saffir_simpson_category, sea_level_rise, bloom_risk_score, risk_score** will be **generated later by ML model** and not stored at this stage.
 
+### 3. `location_phones`
+| Column       | Type        | Description |
+|--------------|------------|-------------|
+| location_id  | INT (FK)   | References `locations` table |
+| phone_number | VARCHAR    | Registered phone numbers for SMS alerts |
 
 ## Impact of Coastal Threats on Blue Carbon Ecosystems
 
