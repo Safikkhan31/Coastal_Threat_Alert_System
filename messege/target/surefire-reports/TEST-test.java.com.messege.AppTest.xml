@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="test.java.com.messege.AppTest" time="14.106" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="test.java.com.messege.AppTest" time="13.97" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="24"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="E:\Program Files\java\bin"/>
-    <property name="sun.java.command" value="C:\Users\safik\AppData\Local\Temp\surefire10363273091645546172\surefirebooter-20250831003700799_3.jar C:\Users\safik\AppData\Local\Temp\surefire10363273091645546172 2025-08-31T00-37-00_558-jvmRun1 surefire-20250831003700799_1tmp surefire_0-20250831003700799_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\safik\AppData\Local\Temp\surefire16325550037173042800\surefirebooter-20250831102911829_3.jar C:\Users\safik\AppData\Local\Temp\surefire16325550037173042800 2025-08-31T10-29-11_398-jvmRun1 surefire-20250831102911829_1tmp surefire_0-20250831102911829_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="E:\Projects\Coastal_Threat_Alert_System\messege\target\test-classes;E:\Projects\Coastal_Threat_Alert_System\messege\target\classes;C:\Users\safik\.m2\repository\com\twilio\sdk\twilio\8.31.1\twilio-8.31.1.jar;C:\Users\safik\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\safik\.m2\repository\commons-io\commons-io\2.7\commons-io-2.7.jar;C:\Users\safik\.m2\repository\io\jsonwebtoken\jjwt-api\0.11.2\jjwt-api-0.11.2.jar;C:\Users\safik\.m2\repository\io\jsonwebtoken\jjwt-jackson\0.11.2\jjwt-jackson-0.11.2.jar;C:\Users\safik\.m2\repository\io\jsonwebtoken\jjwt-impl\0.11.2\jjwt-impl-0.11.2.jar;C:\Users\safik\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\safik\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\safik\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\safik\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.3\jackson-core-2.13.3.jar;C:\Users\safik\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.3\jackson-annotations-2.13.3.jar;C:\Users\safik\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.3\jackson-databind-2.13.3.jar;C:\Users\safik\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.13.3\jackson-datatype-jsr310-2.13.3.jar;C:\Users\safik\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-xml\2.13.3\jackson-dataformat-xml-2.13.3.jar;C:\Users\safik\.m2\repository\org\codehaus\woodstox\stax2-api\4.2.1\stax2-api-4.2.1.jar;C:\Users\safik\.m2\repository\com\fasterxml\woodstox\woodstox-core\6.2.7\woodstox-core-6.2.7.jar;C:\Users\safik\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\safik\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\safik\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\safik\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\safik\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\safik\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\safik\.m2\repository\org\slf4j\slf4j-simple\2.0.9\slf4j-simple-2.0.9.jar;C:\Users\safik\.m2\repository\io\github\cdimascio\dotenv-java\3.0.0\dotenv-java-3.0.0.jar;C:\Users\safik\.m2\repository\ch\qos\logback\logback-classic\1.4.11\logback-classic-1.4.11.jar;C:\Users\safik\.m2\repository\ch\qos\logback\logback-core\1.4.11\logback-core-1.4.11.jar;C:\Users\safik\.m2\repository\com\mysql\mysql-connector-j\9.1.0\mysql-connector-j-9.1.0.jar;C:\Users\safik\.m2\repository\com\google\protobuf\protobuf-java\4.26.1\protobuf-java-4.26.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\safik\AppData\Local\Temp\surefire10363273091645546172\surefirebooter-20250831003700799_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\safik\AppData\Local\Temp\surefire16325550037173042800\surefirebooter-20250831102911829_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="24.0.1+9-30"/>
@@ -58,11 +58,19 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="68.0"/>
   </properties>
-  <testcase name="test_main" classname="test.java.com.messege.AppTest" time="13.961">
+  <testcase name="test_main" classname="test.java.com.messege.AppTest" time="13.8">
     <system-out><![CDATA[.......................................routine started.........................................
-Message sent! SID: SM1a34ee137c09a19ecdc0cd3e8bd6c309
+Message sent! SID: SM4a60d02c3658b2001632994ce5599a9e
 
-Message sent! SID: SM9e011a60ee645b03dc8a155d32f01bed
+Message sent! SID: SMf23dd17ddced8a12db0ce87e7f152ee0
+
+Message sent! SID: SM88c849817347c7cebb499243423ca26a
+
+Message sent! SID: SM3c66b62a83102c5ab9b8260333a3e018
+
+Message sent! SID: SM574fb74e751d71e2a093ac7d381b7967
+
+Message sent! SID: SM269641d7659c1a0b5ed929e223a1e388
 
 ........................................rountine ended ............................................
 
@@ -70,21 +78,9 @@ Message sent! SID: SM9e011a60ee645b03dc8a155d32f01bed
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-com.twilio.exception.ApiException: Twilio could not find a Channel with the specified From address
-
-com.twilio.exception.ApiException: The number +91787448XXXX is unverified. Trial accounts cannot send messages to unverified numbers; verify +91787448XXXX at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers
-
-com.twilio.exception.ApiException: Twilio could not find a Channel with the specified From address
-
 com.twilio.exception.ApiException: The number +91931346XXXX is unverified. Trial accounts cannot send messages to unverified numbers; verify +91931346XXXX at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers
 
-com.twilio.exception.ApiException: Twilio could not find a Channel with the specified From address
-
 com.twilio.exception.ApiException: The number +91931346XXXX is unverified. Trial accounts cannot send messages to unverified numbers; verify +91931346XXXX at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers
-
-com.twilio.exception.ApiException: Twilio could not find a Channel with the specified From address
-
-com.twilio.exception.ApiException: Twilio could not find a Channel with the specified From address
 
 ]]></system-err>
   </testcase>
