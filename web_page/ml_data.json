@@ -1,0 +1,62 @@
+[
+    {
+        "location_id": "LOC001",
+        "location": "Mumbai Coast",
+        "alerts": [
+            "Algal levels too low. Risk of reduced food availability for fish larvae. Authorities should monitor ecosystem balance."
+        ]
+    },
+    {
+        "location_id": "LOC002",
+        "location": "Chennai Shore",
+        "alerts": [
+            "Algal levels too low. Risk of reduced food availability for fish larvae. Authorities should monitor ecosystem balance."
+        ]
+    },
+    {
+        "location_id": "LOC003",
+        "location": "Goa Beach",
+        "alerts": [
+            "Sea level rise exceeds safe threshold. Blue carbon ecosystems under stress, long-term coastal planning required.",
+            "Algal levels too low. Risk of reduced food availability for fish larvae. Authorities should monitor ecosystem balance."
+        ]
+    },
+    {
+        "location_id": "LOC004",
+        "location": "Kolkata Port",
+        "alerts": [
+            "Algal levels too low. Risk of reduced food availability for fish larvae. Authorities should monitor ecosystem balance."
+        ]
+    },
+    {
+        "location_id": "LOC005",
+        "location": "Kerala Backwaters",
+        "alerts": [
+            "Sea level rise exceeds safe threshold. Blue carbon ecosystems under stress, long-term coastal planning required.",
+            "Algal levels too low. Risk of reduced food availability for fish larvae. Authorities should monitor ecosystem balance."
+        ]
+    },
+    {
+        "location_id": "LOC006",
+        "location": "AHMEDABAD",
+        "alerts": [
+            "Algal levels too low. Risk of reduced food availability for fish larvae. Authorities should monitor ecosystem balance."
+        ]
+    },
+    {
+        "location_id": "LOC007",
+        "location": "ganhinagar",
+        "alerts": [
+            "Sea level rise exceeds safe threshold. Blue carbon ecosystems under stress, long-term coastal planning required.",
+            "Algal levels too low. Risk of reduced food availability for fish larvae. Authorities should monitor ecosystem balance."
+        ]
+    },
+    {
+        "location_id": "LOC008",
+        "location": "patna",
+        "alerts": [
+            "Sea level rise exceeds safe threshold. Blue carbon ecosystems under stress, long-term coastal planning required.",
+            "Algal levels too low. Risk of reduced food availability for fish larvae. Authorities should monitor ecosystem balance."
+        ]
+    }
+]
